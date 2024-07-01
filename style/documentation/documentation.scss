@@ -53,7 +53,7 @@ $colors: (
 }
 
 .scrollAside {
-  overflow-y: scroll;
+  overflow-y: initial;
   width: auto;
   flex-shrink: 0;
   max-height: calc(100% - 75px);
