@@ -20,6 +20,9 @@
 
 .card1 {
   padding: 0 !important;
+  ul{
+    margin:10px
+  }
 }
 
 .documentationCardMainContainer_bottom {
@@ -88,15 +91,15 @@
     margin-bottom: 25px;
     letter-spacing: 2px;
     // border-bottom: 1px solid rgba(0, 0, 0, 0.18);
-    &:after {
-      content: "";
-      height: 1px;
-      bottom: -10px;
-      background: rgba(31, 31, 31, 0.37);
-      position: absolute;
-      width: 70%;
-      left: 15%;
-    }
+    //&:after {
+    //  content: "";
+    //  height: 1px;
+    //  bottom: -10px;
+    //  background: rgba(31, 31, 31, 0.37);
+    //  position: absolute;
+    //  width: 70%;
+    //  left: 15%;
+    //}
   }
 
   h3 {
