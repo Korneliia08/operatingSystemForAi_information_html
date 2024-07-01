@@ -1,0 +1,177 @@
+.documentationNavContainer {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+.documentationNavContainer .firstPart {
+  display: flex;
+  width: 100%;
+  flex-grow: 100;
+  justify-content: flex-start;
+  align-items: center;
+}
+.documentationNavContainer .firstPart img {
+  width: 45px;
+  margin-right: 25px;
+}
+.documentationNavContainer .firstPart img:hover {
+  cursor: pointer;
+}
+.documentationNavContainer .firstPart .iconSearch {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #118c00;
+}
+@media (max-width: 700px) {
+  .documentationNavContainer .firstPart .iconSearch {
+    display: none;
+  }
+}
+.documentationNavContainer .firstPart input {
+  width: 20%;
+  padding: 6px 10px;
+  border: 1.5px solid #d5d5d5;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  color: #446444;
+  min-width: 190px;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .documentationNavContainer .firstPart input {
+    min-width: 140px;
+    font-size: 15px;
+  }
+}
+.documentationNavContainer .firstPart .btnSearch {
+  display: block;
+  padding: 8px 10px;
+  height: 100%;
+  margin-left: 1px;
+  background-color: #118c00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: 250ms ease;
+}
+@media (max-width: 700px) {
+  .documentationNavContainer .firstPart .btnSearch {
+    padding: 6px 10px;
+  }
+}
+.documentationNavContainer .firstPart .btnSearch:hover {
+  cursor: pointer;
+  background-color: #0e7900;
+}
+.documentationNavContainer .secondPart {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 15px;
+  flex-shrink: 0;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .documentationNavContainer .secondPart {
+    display: none;
+  }
+}
+.documentationNavContainer .secondPart a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  transition: 250ms ease;
+}
+.documentationNavContainer .secondPart a.disabled {
+  cursor: not-allowed;
+  color: #757575;
+}
+.documentationNavContainer .secondPart a:hover:not(.disabled) {
+  cursor: pointer;
+  color: #00a900;
+}
+.documentationNavContainer .hamburger {
+  visibility: hidden;
+}
+@media (max-width: 900px) {
+  .documentationNavContainer .hamburger {
+    visibility: visible;
+  }
+}
+.documentationNavContainer .mobileMenu {
+  height: 0;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  transition: 300ms;
+  background: white;
+  overflow-y: hidden;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  row-gap: 0px;
+  padding: 0px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 11px;
+  visibility: hidden;
+}
+@media (max-width: 900px) {
+  .documentationNavContainer .mobileMenu {
+    visibility: visible;
+  }
+}
+.documentationNavContainer .mobileMenu a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+.documentationNavContainer .mobileMenu > div {
+  width: 100%;
+}
+.documentationNavContainer .mobileMenu > div a {
+  padding-left: 30px;
+}
+.documentationNavContainer .mobileMenu.open {
+  padding: 10px 0 0 0;
+  height: auto;
+  border-right: 2px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+}
+.documentationNavContainer .mobileMenu a, .documentationNavContainer .mobileMenu > span {
+  text-decoration: none;
+  font-size: 15px;
+  color: #494949;
+  font-weight: bold;
+  width: 100%;
+  padding: 7px 12px 7px 12px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.67);
+  display: flex;
+  justify-content: space-between;
+}
+.documentationNavContainer .mobileMenu a:hover:not([data-disabled=true]), .documentationNavContainer .mobileMenu > span:hover:not([data-disabled=true]) {
+  color: #00c400;
+  cursor: pointer;
+}
+.documentationNavContainer .mobileMenu a[data-disabled=true], .documentationNavContainer .mobileMenu > span[data-disabled=true] {
+  cursor: not-allowed;
+  color: rgba(73, 73, 73, 0.58);
+}
+.documentationNavContainer .mobileMenu a svg, .documentationNavContainer .mobileMenu > span svg {
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 13px;
+}
+.documentationNavContainer .mobileMenu .submenu {
+  display: flex;
+  flex-direction: column;
+}
+.documentationNavContainer .spacer {
+  width: 100%;
+  height: 9px;
+}
+
+/*# sourceMappingURL=documentationNav.css.map */

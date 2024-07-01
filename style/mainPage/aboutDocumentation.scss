@@ -1,0 +1,82 @@
+.containerAboutDocumentation {
+  display: flex;
+  padding: 40px 0;
+  justify-content: start;
+  @media (max-width: 500px) {
+    padding: 15px 0 40px 0;
+  }
+
+  .containerForContent {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    row-gap: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (max-width: 900px) {
+
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #005000;
+      letter-spacing: 1.5px;
+      @media (max-width: 500px) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 25px;
+      color: #383838;
+      @media (max-width: 500px) {
+        font-size: 17px;
+      }
+
+      span {
+        //  color: #4f0000;
+        color: #064f00;
+        font-weight: bold;
+      }
+    }
+
+    button {
+      display: block;
+      width: 250px;
+      padding: 12px 20px;
+      height: 100%;
+      margin-left: 2px;
+      background-color: #118c00;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      font-size: 18px;
+      transition: 250ms ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #00a900;
+      }
+    }
+  }
+
+  position: relative;
+
+  img {
+    @media (max-width: 900px) {
+      position: absolute;
+      opacity: 0.1;
+      width: 80%;
+      left: 10%;
+      top: 10%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    width: 200px;
+    margin-left: 200px;
+  }
+}

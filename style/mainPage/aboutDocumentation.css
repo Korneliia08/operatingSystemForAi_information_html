@@ -1,0 +1,83 @@
+.containerAboutDocumentation {
+  display: flex;
+  padding: 40px 0;
+  justify-content: start;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .containerAboutDocumentation {
+    padding: 15px 0 40px 0;
+  }
+}
+.containerAboutDocumentation .containerForContent {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  row-gap: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .containerAboutDocumentation .containerForContent {
+    width: 100%;
+  }
+}
+.containerAboutDocumentation .containerForContent h2 {
+  font-size: 30px;
+  color: #005000;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 500px) {
+  .containerAboutDocumentation .containerForContent h2 {
+    font-size: 20px;
+  }
+}
+.containerAboutDocumentation .containerForContent p {
+  font-size: 21px;
+  line-height: 25px;
+  color: #383838;
+}
+@media (max-width: 500px) {
+  .containerAboutDocumentation .containerForContent p {
+    font-size: 17px;
+  }
+}
+.containerAboutDocumentation .containerForContent p span {
+  color: #064f00;
+  font-weight: bold;
+}
+.containerAboutDocumentation .containerForContent button {
+  display: block;
+  width: 250px;
+  padding: 12px 20px;
+  height: 100%;
+  margin-left: 2px;
+  background-color: #118c00;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  transition: 250ms ease;
+}
+.containerAboutDocumentation .containerForContent button:hover {
+  cursor: pointer;
+  background-color: #00a900;
+}
+.containerAboutDocumentation img {
+  width: 200px;
+  margin-left: 200px;
+}
+@media (max-width: 900px) {
+  .containerAboutDocumentation img {
+    position: absolute;
+    opacity: 0.1;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=aboutDocumentation.css.map */

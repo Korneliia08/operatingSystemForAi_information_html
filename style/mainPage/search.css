@@ -1,0 +1,41 @@
+.headerSearchContainer {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .headerSearchContainer {
+    display: none;
+  }
+}
+.headerSearchContainer .iconSearch {
+  margin-right: 25px;
+  font-size: 28px;
+  color: #118c00;
+}
+.headerSearchContainer input {
+  width: 40%;
+  padding: 10px 15px;
+  border: 1.5px solid #d5d5d5;
+  background-color: #f5f5f5;
+  font-size: 20px;
+  color: #446444;
+}
+.headerSearchContainer .btnSearch {
+  display: block;
+  padding: 12px 20px;
+  height: 100%;
+  margin-left: 2px;
+  background-color: #118c00;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  transition: 250ms ease;
+}
+.headerSearchContainer .btnSearch:hover {
+  cursor: pointer;
+  background-color: #0e7900;
+}
+
+/*# sourceMappingURL=search.css.map */

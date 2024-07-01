@@ -1,0 +1,38 @@
+.documentationContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.documentationContainer .bottom {
+  border-top: 1px solid rgba(189, 189, 189, 0.75);
+  display: flex;
+}
+
+.line {
+  background: linear-gradient(to right, #00c800 0%, #a1faa1 5%, #b3ffb3 10%, #99ff99 15%, #80ff80 20%, #66ff66 25%, #4dff4d 30%, #33ff33 35%, #1aff1a 40%, #00ff00 45%, #00e600 50%, #00cc00 55%, #00b300 60%, #009900 65%, #009500 70%, #00a500 75%, #06b506 80%, #59aa59 85%, #76dc76 90%, #00ff9d 100%);
+  width: 100%;
+  height: 5px;
+  background-color: gold;
+}
+
+.scrollAside {
+  overflow-y: scroll;
+  width: auto;
+  flex-shrink: 0;
+  max-height: calc(100% - 75px);
+}
+@media (max-width: 900px) {
+  .scrollAside {
+    display: none;
+  }
+}
+
+.scrollOutlet {
+  overflow-y: initial;
+  width: auto;
+  flex-grow: 100;
+  max-width: 100%;
+  max-height: calc(100vh - 75px);
+}
+
+/*# sourceMappingURL=documentation.css.map */

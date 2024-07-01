@@ -1,0 +1,76 @@
+.mainHeaderContainer {
+  display: flex;
+  width: 100vw;
+  padding: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid rgba(227, 227, 227, 0.94);
+}
+@media (max-width: 900px) {
+  .mainHeaderContainer {
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .mainHeaderContainer {
+    padding: 5px;
+  }
+}
+.mainHeaderContainer img {
+  margin-right: 40px;
+}
+@media (max-width: 900px) {
+  .mainHeaderContainer img {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .mainHeaderContainer img {
+    margin-right: 10px;
+  }
+}
+.mainHeaderContainer img:hover {
+  cursor: pointer;
+}
+.mainHeaderContainer .mobileNav {
+  display: none;
+}
+@media (max-width: 900px) {
+  .mainHeaderContainer .mobileNav {
+    display: block;
+  }
+}
+.mainHeaderContainer nav {
+  display: flex;
+  column-gap: 25px;
+}
+.mainHeaderContainer nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  transition: 250ms ease;
+}
+@media (max-width: 500px) {
+  .mainHeaderContainer nav a {
+    font-size: 15px;
+  }
+}
+.mainHeaderContainer nav a.disabled {
+  cursor: not-allowed;
+  color: #757575;
+}
+.mainHeaderContainer nav a:hover:not(.disabled) {
+  cursor: pointer;
+  color: #00a900;
+}
+@media (max-width: 900px) {
+  .mainHeaderContainer nav {
+    column-gap: 5px;
+  }
+  .mainHeaderContainer nav a {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
