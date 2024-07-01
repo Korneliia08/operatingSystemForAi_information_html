@@ -20,4 +20,10 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 550px) {
+  .hamburger {
+    padding: 0 !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

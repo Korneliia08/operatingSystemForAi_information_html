@@ -21,3 +21,10 @@ body {
 a {
   text-decoration: none;
 }
+
+.hamburger {
+  @media (max-width: 550px) {
+    padding: 0 !important;
+
+  }
+}
