@@ -18,6 +18,10 @@
   }
 }
 
+.card1 {
+  padding: 0 !important;
+}
+
 .documentationCardMainContainer_bottom {
   display: flex;
   flex-direction: column;
@@ -34,7 +38,7 @@
     max-height: 100%;
     right: 0;
     bottom: 0;
-    opacity: 0.4;
+    opacity: 0.12;
     position: absolute;
     @media (max-width: 800px) {
       opacity: 0.1;

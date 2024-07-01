@@ -64,11 +64,11 @@ $colors: (
 }
 
 .scrollOutlet {
-  overflow-y: initial;
+  overflow-y: scroll;
   width: auto;
   flex-grow: 100;
   max-width: 100%;
   //flex-shrink: 0;
 
-  max-height: calc(100vh - 75px);
+  max-height: calc(100vh - 76px);
 }
