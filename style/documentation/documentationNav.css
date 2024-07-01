@@ -39,11 +39,13 @@
   color: #446444;
   min-width: 190px;
   border-radius: 4px;
+  height: 36px;
 }
 @media (max-width: 700px) {
   .documentationNavContainer .firstPart input {
     min-width: 140px;
     font-size: 15px;
+    height: initial;
   }
 }
 .documentationNavContainer .firstPart .btnSearch {
